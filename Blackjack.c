@@ -29,7 +29,6 @@ int topOfDeck = 311;
 int playerChips = 1000;
 
 //FUNCTION PROTOYPES
-void printRow(int rowNumber);
 void createDeck();
 char* determineCardName(int cardNumber);
 char* determineCardSuit(int cardNumber);
@@ -44,20 +43,9 @@ int playerHit(struct Hand playerHand);		//return 0 for false, 1 for true
 int main()
 {
 	srand(time(NULL));
-	printf("\nCOMP 340 - Homework 2\n");
-
+	printf("\nCOMP 340 Spring 2018 - Homework 2\n");
 	
-	//PROBLEM 1
-	printf("\nProblem 1:\n");
-	
-	for(int x = 1; x <= 8; x++)
-		printRow(x);
-	
-	
-	//PROBLEM 2
-	printf("\n\nProblem 2:\n");
-
-	printf("\nBLACKJACK!\n");
+	printf("\n\nBLACKJACK!\n");
 	printf("Beat the Dealer to win chips\n");
 	printf("Get 21 for an extra payout\n");
 	printf("Ace         -  1 or 11\n");
